@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 255, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="first_num">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>90</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="second_num">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>170</y>
+      <width>200</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;Arial&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="calcLB">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>220</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 255, 0);
+text-decoration: underline;
+font: 75 20pt &quot;Arial&quot;;
+text-decoration: underline;</string>
+    </property>
+    <property name="text">
+     <string>CALCULATOR</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBN">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>260</y>
+      <width>95</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+font: 8pt &quot;Arial&quot;;
+color:rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>ADD</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="subBN">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>260</y>
+      <width>95</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+font: 8pt &quot;Arial&quot;;
+color:rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>SUB</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mulBN">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>350</y>
+      <width>95</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+font: 8pt &quot;Arial&quot;;
+color:rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>MUL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="divBN">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>350</y>
+      <width>95</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 255, 255);
+font: 8pt &quot;Arial&quot;;
+color:rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>DIV</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultLB">
+    <property name="geometry">
+     <rect>
+      <x>135</x>
+      <y>400</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0, 0, 0);
+font: 75 italic 16pt &quot;Arial&quot;;
+text-decoration: underline;</string>
+    </property>
+    <property name="text">
+     <string>RESULT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="firstinLB">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>First number</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="secondinLB">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>121</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 10pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Second number</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputLB">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>460</y>
+      <width>220</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string/>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+font: 16pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="lineWidth">
+     <number>12</number>
+    </property>
+    <property name="text">
+     <string notr="true">521141</string>
+    </property>
+   </widget>
+   <zorder>second_num</zorder>
+   <zorder>first_num</zorder>
+   <zorder>calcLB</zorder>
+   <zorder>addBN</zorder>
+   <zorder>subBN</zorder>
+   <zorder>mulBN</zorder>
+   <zorder>divBN</zorder>
+   <zorder>resultLB</zorder>
+   <zorder>firstinLB</zorder>
+   <zorder>secondinLB</zorder>
+   <zorder>outputLB</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

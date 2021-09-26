@@ -1,0 +1,15 @@
+file_name=QFileDialog.getOpenFileName(self, "Open file")
+        self.filename.setText(file_name[0])
+
+data_file=open("E:\Internship\Assignment and etc\datafile.txt","r") ##reading tada from txt file
+#print(data_file.read())
+for word in data_file.readlines():
+    data=word.split(",")
+    print(data[1])
+
+
+def data_window(self):      #double window
+        self.window=QtWidgets.QMainWindow()
+        self.ui = Ui_second_window()
+        self.ui.setupUi(self.window)
+        self.window.show()
