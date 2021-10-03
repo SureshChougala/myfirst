@@ -277,7 +277,7 @@ class Ui_home_window(object):
     def choose_file(self):
         self.browseBN.setStyleSheet("background-color: rgb(0, 85, 225)")
         self.file_name.setEnabled(True)
-        filename=QFileDialog.getOpenFileName()
+        filename=QFileDialog.getOpenFileName(None,"Open file"," ", "Text files(*.txt*)")
         nfile=filename[0].split("/")
         self.file_name.setText("UDS CAN "+"("+nfile[-1]+")")
         self.data_window()
