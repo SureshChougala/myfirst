@@ -308,7 +308,6 @@ class Ui_home_window(object):
         self.outputWD.setText(content.text(0))
 
     def transmit_data(self):
-        
         sys_time=dt.datetime.now()
         self.tableWidget.setItem(0,0,QtWidgets.QTableWidgetItem(str(sys_time.strftime("    %H:%M"))))
         self.tableWidget.setItem(0,1,QtWidgets.QTableWidgetItem("    0X700"))
